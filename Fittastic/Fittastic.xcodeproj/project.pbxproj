@@ -13,9 +13,11 @@
 		0C474220268009B400357609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C47421E268009B400357609 /* Main.storyboard */; };
 		0C474222268009B700357609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C474221268009B700357609 /* Assets.xcassets */; };
 		0C474225268009B700357609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C474223268009B700357609 /* LaunchScreen.storyboard */; };
+		13333FBC530D3902DEC90751 /* Pods_Fittastic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11832F8BA4F9FA58357B50D5 /* Pods_Fittastic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0306EECBC33D308AFF123DAC /* Pods-Fittastic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fittastic.debug.xcconfig"; path = "Target Support Files/Pods-Fittastic/Pods-Fittastic.debug.xcconfig"; sourceTree = "<group>"; };
 		0C474215268009B400357609 /* Fittastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fittastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C474218268009B400357609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C47421A268009B400357609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		0C474221268009B700357609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C474224268009B700357609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C474226268009B700357609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11832F8BA4F9FA58357B50D5 /* Pods_Fittastic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fittastic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC05FCF4DE16D5399FC8E85 /* Pods-Fittastic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fittastic.release.xcconfig"; path = "Target Support Files/Pods-Fittastic/Pods-Fittastic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13333FBC530D3902DEC90751 /* Pods_Fittastic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0C474217268009B400357609 /* Fittastic */,
 				0C474216268009B400357609 /* Products */,
+				D1EFC7C3AA6899A75F761BDF /* Pods */,
+				82B4E824EBF238C4A1F6C101 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Fittastic;
 			sourceTree = "<group>";
 		};
+		82B4E824EBF238C4A1F6C101 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11832F8BA4F9FA58357B50D5 /* Pods_Fittastic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1EFC7C3AA6899A75F761BDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0306EECBC33D308AFF123DAC /* Pods-Fittastic.debug.xcconfig */,
+				DAC05FCF4DE16D5399FC8E85 /* Pods-Fittastic.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C474229268009B700357609 /* Build configuration list for PBXNativeTarget "Fittastic" */;
 			buildPhases = (
+				7AA129DE47C2DEE1F661201C /* [CP] Check Pods Manifest.lock */,
 				0C474211268009B400357609 /* Sources */,
 				0C474212268009B400357609 /* Frameworks */,
 				0C474213268009B400357609 /* Resources */,
+				79055F4F373E2FFCFE33D0CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79055F4F373E2FFCFE33D0CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fittastic/Pods-Fittastic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fittastic/Pods-Fittastic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fittastic/Pods-Fittastic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AA129DE47C2DEE1F661201C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fittastic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C474211268009B400357609 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		0C47422A268009B700357609 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0306EECBC33D308AFF123DAC /* Pods-Fittastic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		0C47422B268009B700357609 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAC05FCF4DE16D5399FC8E85 /* Pods-Fittastic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
