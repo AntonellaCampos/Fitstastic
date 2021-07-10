@@ -69,24 +69,61 @@
                                     <action selector="NewQuote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YPh-iZ-hMz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Graph" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRw-IS-1g7" userLabel="ShowGraphLbl">
+                                <rect key="frame" x="40" y="64" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QT2-pc-iw7" userLabel="GraphSwitch">
+                                <rect key="frame" x="149" y="59" width="51" height="31"/>
+                                <connections>
+                                    <action selector="ShowGraphBtn:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ebo-sd-6AA"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disconnected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYk-pv-1Rd" userLabel="ConnectionStatus">
+                                <rect key="frame" x="40" y="110" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PyE-Ae-V5l">
+                                <rect key="frame" x="0.0" y="138" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Fittastic" id="f6u-4G-2Dd" userLabel="Fittastic">
+                                        <barButtonItem key="rightBarButtonItem" image="restart" catalog="system" id="wVa-fX-Xd3">
+                                            <connections>
+                                                <action selector="HeartRate:" destination="BYZ-38-t0r" id="f6E-2P-iCo"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="mRw-IS-1g7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="0kV-Ne-Ewf"/>
+                            <constraint firstItem="FYk-pv-1Rd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="35y-Ay-Dcz"/>
                             <constraint firstItem="9iN-ox-WJm" firstAttribute="top" secondItem="hzx-yO-ugC" secondAttribute="bottom" constant="35" id="9Xo-eg-GV1"/>
                             <constraint firstItem="hzx-yO-ugC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BJq-gd-ivD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AvS-l6-hml" secondAttribute="trailing" constant="61" id="CXP-jr-E66"/>
+                            <constraint firstItem="FYk-pv-1Rd" firstAttribute="top" secondItem="mRw-IS-1g7" secondAttribute="bottom" constant="25" id="ENc-MM-yEG"/>
                             <constraint firstItem="PNe-XO-n1o" firstAttribute="top" secondItem="9iN-ox-WJm" secondAttribute="bottom" constant="8" id="HpM-yR-B4Z"/>
                             <constraint firstItem="AvS-l6-hml" firstAttribute="top" secondItem="oeQ-4S-Hvc" secondAttribute="bottom" constant="2.5" id="KRI-6N-wE4"/>
                             <constraint firstItem="hzx-yO-ugC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PIN-39-eDU"/>
+                            <constraint firstItem="QT2-pc-iw7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="15" id="Pmf-t4-MwF"/>
                             <constraint firstItem="PNe-XO-n1o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="R8v-9h-ZCH"/>
                             <constraint firstItem="hzx-yO-ugC" firstAttribute="top" secondItem="W5Z-6p-cAV" secondAttribute="bottom" constant="45" id="RVq-TH-LHy"/>
                             <constraint firstItem="hzx-yO-ugC" firstAttribute="top" secondItem="YCv-D6-3VV" secondAttribute="bottom" constant="70" id="VYb-Ok-pyn"/>
+                            <constraint firstItem="mRw-IS-1g7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Wfa-cc-ANy"/>
                             <constraint firstItem="9iN-ox-WJm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="efm-20-czB"/>
                             <constraint firstItem="oeQ-4S-Hvc" firstAttribute="top" secondItem="hzx-yO-ugC" secondAttribute="bottom" constant="19" id="hw5-rf-wPN"/>
                             <constraint firstItem="W5Z-6p-cAV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="peR-5r-V9q"/>
                             <constraint firstItem="YCv-D6-3VV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sBd-ff-DgW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oeQ-4S-Hvc" secondAttribute="trailing" constant="33" id="tTT-rY-SMi"/>
+                            <constraint firstItem="QT2-pc-iw7" firstAttribute="leading" secondItem="mRw-IS-1g7" secondAttribute="trailing" constant="15" id="vJC-5r-gqy"/>
                         </constraints>
                     </view>
                     <connections>
@@ -94,6 +131,8 @@
                         <outlet property="LineChartBox" destination="hzx-yO-ugC" id="cO5-px-RFt"/>
                         <outlet property="Motivation" destination="oeQ-4S-Hvc" id="GyG-O5-kn3"/>
                         <outlet property="Steps" destination="PNe-XO-n1o" id="3tQ-Ay-9ps"/>
+                        <outlet property="connectStatusLbl" destination="FYk-pv-1Rd" id="2Lc-0X-Na6"/>
+                        <outlet property="showGraphLbl" destination="mRw-IS-1g7" id="34V-6u-559"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -102,6 +141,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="restart" catalog="system" width="120" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
